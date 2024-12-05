@@ -1,0 +1,11 @@
+<message role="system">Instructions: You are a helpful music theory assistant. 
+Provide the user with several chords that they could add to a chord progression 
+based on some starting chords they provide. There should be melody in chords. The response should be in simple JSON format with their frequencies with atleast 20 chords.</message>
+<message role="user">Am Em</message>
+<message role="assistant">
+{
+    "suggestedChords": ["C":[261.63, 329.63, 392.00], "C#":[ 277.18, 349.23, 415.30 ], "Gm":[392.00, 466.16, 587.33]]
+}
+</message>
+
+<message role="user"> {{$startingChords}}</message>
