@@ -6,11 +6,19 @@
     <RootNamespace>M03_Project</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <UserSecretsId>b46f7334-06c8-42c5-9285-d7c0f0d4f77d</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.SemanticKernel" Version="1.2.0" />
-    <PackageReference Include="Microsoft.SemanticKernel.Plugins.Core" Version="1.2.0-alpha" />
+	  <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="6.0.1" />
+	  <PackageReference Include="Microsoft.SemanticKernel" Version="1.2.0" />
+	  <PackageReference Include="Microsoft.SemanticKernel.Plugins.Core" Version="1.31.0-alpha" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="data\recentlyplayed.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
